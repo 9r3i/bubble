@@ -1,0 +1,48 @@
+html,body{height:100vh;width:100vw;}
+body{
+  margin:0px;
+  padding:0px;
+  overflow:hidden;
+  background-color:#37b;
+  background:-o-linear-gradient(top,#37b 0%,#024 100%);
+  background:-webkit-linear-gradient(top,#37b 0%,#024 100%);
+  background:linear-gradient(top,#37b 0%,#024 100%);
+}
+canvas{
+  display:block;
+  width:100vw;
+  height:100vh;
+  position:relative;
+  z-index:10;
+}
+.pop-count:before{
+  content:attr(data-prefix);
+}
+.pop-count:after{
+  content:attr(data-value);
+}
+.pop-count{
+  min-width:30px;
+  position:fixed;
+  z-index:11;
+  top:5px;
+  left:0px;
+  background-color:#036;
+  opacity:0.8;
+  color:#fff;
+  padding:10px 20px;
+  text-align:center;
+  font-family:system-ui;
+}
+.pop-time{
+  position:fixed;
+  z-index:12;
+  top:0px;
+  left:0px;
+  background-color:#59d;
+  opacity:0.9;
+  height:5px;
+  width:0%;
+  box-shadow:0px 0px 3px #7bf;
+}
+
